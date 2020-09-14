@@ -1,0 +1,29 @@
+.top {
+    background: darkgray;
+    text-align: center;
+    color: lightcyan;
+    
+}
+
+button {
+    background: lightcoral;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.column {
+    float: left;
+    margin-right: 20px;
+}
+
+.card {
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    font-family: helvetica;
+    box-shadow: 10px 10px 5px 0px gray;
+    margin-bottom: 20%;
+}
