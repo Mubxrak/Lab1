@@ -21,8 +21,10 @@
 </head>
 
 <body>
+  <!-- bg-cover-->
     <div class="bg-cover">
         <div class="container">
+          <!-- carousel-->
             <div id="slides" class="carousel slide col-md-8 offset-md-2" data-ride="carousel" style="margin-top: 10px; margin-bottom: 10px;">
                 <ol class="carousel-indicators">
                   <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -52,11 +54,11 @@
         </div>
 
 
-
+        
         <div class="h-40 center-me">
             <div class="my-auto">
-              
-                <form class="form-signin" style="background: black;">
+              <!-- signin form-->
+                <form class="form-signin" style="background: black; color: white;">
                   <img style="width: 100px; height: 100px" src="images/xlogo.jpeg">
                     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
                     <label for="inputEmail" class="sr-only">Email address</label>
@@ -69,7 +71,7 @@
                             <input type="checkbox" value="remember-me"> Remember me
                         </label>
                     </div>
-                    <button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+                    <button onclick="window.location.href='about.html';" class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
                     <p class="mt-5 mb-3 text-muted">&copy; 2020-Eternity</p>
                 </form>
             </div>
