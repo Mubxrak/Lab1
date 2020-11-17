@@ -10,11 +10,11 @@ require 'includes/review-helper.php';
         <div class="my-auto">
             <form id="review-form" action="includes/review-helper.php" method="post">
                 <div class="container">
-                    <i class="fa fa-2x star-rev" data-index="1"></i>
-                    <i class="fa fa-2x star-rev" data-index="2"></i>
-                    <i class="fa fa-2x star-rev" data-index="3"></i>
-                    <i class="fa fa-2x star-rev" data-index="4"></i>
-                    <i class="fa fa-2x star-rev" data-index="5"></i>
+                    <i class="fa fa-star fa-2x star-rev" data-index="1"></i>
+                    <i class="fa fa-star fa-2x star-rev" data-index="2"></i>
+                    <i class="fa fa-star fa-2x star-rev" data-index="3"></i>
+                    <i class="fa fa-star fa-2x star-rev" data-index="4"></i>
+                    <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
                 </div>
                 <div class="form-group" style="margin-top: 15px;">
                     <label class="title-label" for="review-title" style="font-size: 16px; font-weight: bold; text-align: center">Title</label>
@@ -24,7 +24,7 @@ require 'includes/review-helper.php';
                     <input type="hidden" name="item_id" value="<?php echo $_GET['id']; ?>">
                 </div>
                 <div class="form-group">
-                    <button class="bton btn-outline-danger" id="review-submit" name="review-submit" type="submit" style="width: 100%;">Reviews</button>
+                    <button class="bton btn-outline-danger" id="review-submit" name="review-submit" type="submit" style="width: 100%;">Submit review</button>
                 </div>
             </form>
         </div>
@@ -74,7 +74,7 @@ $(document).ready(function() {
         for(var i = 0; i < max; i++) {
             $('.star-rev:eq('+i+')').css('color', 'goldenrod');
         }
-        document.getElementById('rating').value = parseInt(LocalStorage.getItem('rating'));
+        document.getElementById('rating').value = parseInt(localStorage.getItem('rating'));
         console.log(id);
     }
     //Used to interchangeably send GET requests for review display data. 
